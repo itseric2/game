@@ -1,0 +1,51 @@
+R1. Se debe poder crear, editar y eliminar un pokemon, un pokemon se compone de:
+-Un nombre
+-Una vida
+-Un nivel
+-Un contador de exp
+-Un daño base
+-Una lista de habilidades
+-Una lista de tipos [Planta, Roca, Agua, Fuego, Fantasma] (Máximo dos tipos)
+-Una velocidad
+-Precisión (La precisión va del 1 al 10)
+-Probabilidad de acertar (Luego le digo como calcular la Probabilidad de acertar)
+
+R2. Se debe poder crear, editar y eliminar una habilidad, una habilidad se compone de:
+-Un nombre
+-Un daño
+-Un tipo (El tipo de la habilidad son los mismo que los tipos de pokemon, 
+una habilidad solo puede tener un tipo y un pokemon solo puede tener habilidades de sus mismo tipos)
+
+R3. Se debe poder crear un jugador, un jugador se compone de:
+-Un nombre
+-Una lista de pokemons
+-Un inventario
+
+R4. Se debe poder crear una poción. Una poción está compuesta por:
+-Estadistica que afecta
+-Valor en el que afecta esa Estadistica (Podría sumar, restar, multiplicar o dividir la Estadistica por una cierta cantidad)
+-Duración del efecto en turnos
+
+R5. Cuando el jugador no este en combate debera poder elegir entre tres opciones:
+-Explorar mapa
+-Ver inventario
+-Ver pokemons (El jugador puede tener un máximo de 4 pokemons)
+
+R6. Cuando el jugador elige la opción explorar mapa tiene una Probabilidad del 20%
+de entrar en batalla contra un pokemon salvaje. El pokemon salvaje debe de estar como mínimo
+5 niveles por debajo del nivel promedio de los pokemon que el jugador posee y máximo 6
+niveles por encima. Además, con cada paso ahí una Probabilidad del 1% de que el jugador
+encuentre un pokemon 30 niveles por encima de su nivel promedio.
+
+R7. Durante el combate el jugador podrá elegir entre tres opciones:
+-Abrir inventario
+-Atacar
+-Atrapar(Solo se puede atrapar si la vida del pokemon enemigo es menor al 10%)
+-Huir (La probabilidad del huir se calcula como (velocidad_enemiga-velocidad_promedio_del_equipo)/(velocidad_enemiga+velocidad_promedio_del_equipo))
+
+
+R8. Cuando el jugador abre el inventario saldrá un menu que le permitira elegir cualquier
+elemento del inventario. Cuando selecciona un elemento del inventario podrá ver la descripción o usar el objeto
+
+R9. Cuando elige atacar se desplegará una lista con sus pokemons, podrá seleccionar
+un pokemon para que ataques y se desplegará la lista de ataques disponibles.
